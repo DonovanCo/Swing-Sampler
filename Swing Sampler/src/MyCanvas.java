@@ -30,7 +30,7 @@ public class MyCanvas extends Canvas
 	        graphics.setColor(Color.black);
 	        graphics.drawLine(40, 30, 330, 380);
 	        
-	        for (int i = 0; i < 350; i++)
+	        for (int i = 0; i < 350; i=i+7)
 	        	{
 		        graphics.setColor(Color.green);
 		        graphics.fillRect(300, i, 50, 50);
