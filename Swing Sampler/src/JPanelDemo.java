@@ -14,18 +14,16 @@ public class JPanelDemo extends JFrame
 		frame.setResizable(false);
 		frame.setLocationRelativeTo(null); //Sets JPanel to center of screen 
 		
-		String[] preMadeArray = new String[] {"First Option", "Second Option", "Third Option"}; 
+		String[] preMadeArray = new String[] {"Blaziken", "Moltres", "Blastoise"}; 
 		JButton button = new JButton("Enter");
 		final JComboBox<String> dropdown = new JComboBox<String>(preMadeArray);
-		final TextField txtfield = new TextField(20);
-		final JLabel words = new JLabel("Text");
+		final JLabel words = new JLabel("Choose your pokemon.");
 		
 		final JPanel panel = new JPanel();
-		panel.setBackground(Color.red);
+		panel.setBackground(Color.white);
 		frame.add(panel);
 		panel.add(words);
 		panel.add(dropdown);
-		panel.add(txtfield);
 		panel.add(button);
 		button.addActionListener(new ActionListener()
 			{
@@ -33,7 +31,6 @@ public class JPanelDemo extends JFrame
 				{
 				System.out.println(dropdown.getSelectedItem());
 				System.out.println(dropdown.getSelectedIndex());
-				System.out.println(txtfield.getText());
 				}
 			});
 		
